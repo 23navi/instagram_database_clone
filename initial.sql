@@ -1,0 +1,4 @@
+SHOW DATABASES;
+CREATE DATABASE instagram;
+USE instagram;
+SELECT DATABASE();
