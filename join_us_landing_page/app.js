@@ -8,9 +8,12 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(__dirname + "/public"));
 
 var connection = mysql.createConnection({
+  // for different mysql the host and username will be different and we are not using the password??
+  
   host     : 'localhost',
-  user     : 'learnwithcolt',
+  user     : 'root', 
   database : 'join_us'
+  
 });
 
 app.get("/", function(req, res){
